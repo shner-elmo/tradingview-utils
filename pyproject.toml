@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tradingview-utils"
+version = "0.0.1"
+description = ""
+authors = ["Shneor <770elmo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tradingview_utils", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tradingview-screener = "^3.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.32.0"
+ruff = "^0.9.5"
+pdoc = "^15.0.1"
+pytest = "^8.3.4"
+pyright = "^1.1.393"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
